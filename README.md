@@ -4,7 +4,7 @@ Here I'll keep and update all my dotfiles :D.
 
 ## Plugins
 
-This are the plugins I have installed.
+These are the plugins I have installed.
 
 * Pathogen (plugin installer)
 ```
