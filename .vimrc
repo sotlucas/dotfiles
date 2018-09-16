@@ -6,11 +6,12 @@ filetype plugin indent on
 " Colors {{{
 syntax enable
 colorscheme gruvbox 
-set background=light
+set background=dark
 set t_Co=256
+let g:gruvbox_contrast_dark="hard"
 " }}}
 " Spaces & Tabs {{{
-set tabstop=4 sw=4 " Set tab to 4 visual spaces
+set tabstop=4 expandtab sw=4 " Set tab to 4 visual spaces
 " }}}
 " UI Config {{{
 set number 			" Show line number
