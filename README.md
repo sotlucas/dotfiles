@@ -1,4 +1,4 @@
-<h2 align="center"> sotlucas' dotfiles <h/2>
+<h2 align="center"> sotlucas' dotfiles </h2>
 
 _Here I'll keep and update all my dotfiles :D_
 
