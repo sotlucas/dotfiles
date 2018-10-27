@@ -1,6 +1,6 @@
-# sotlucas' dotfiles
+<h2 align="center"> sotlucas' dotfiles <h/2>
 
-Here I'll keep and update all my dotfiles :D.
+Here I'll keep and update all my dotfiles :D
 
 ## Plugins
 
