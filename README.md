@@ -6,6 +6,14 @@ _Here I'll keep and update all my dotfiles :D_
 
 </div>
 
+## Installation
+
+To install just run the install.sh script with the following commands
+```
+chmod +x install.sh
+./install.sh
+```
+
 ## Plugins
 
 These are the plugins I have installed.
