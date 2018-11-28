@@ -28,8 +28,10 @@ set incsearch " Search as caracters are entered
 set foldenable
 set modeline
 set modelines=1
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevel=2
+" lets you paste from other sources
+set pastetoggle=<F2>
 " use Ctrl+L to toggle the line number counting method
 function! g:ToggleNuMode()
 	if &rnu == 1
@@ -41,6 +43,24 @@ function! g:ToggleNuMode()
 	endif
 endfunction
 nnoremap <silent><C-L> :call g:ToggleNuMode()<cr>
+" }}}
+" NERDTree {{{
+" use Ctrl+N to toggle NerdTree
+map <C-n> :NERDTreeToggle<CR>
+nnoremap <silent><C-L> :call g:ToggleNuMode()<cr>
+" git indicators
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 " }}}
 " Status Bar {{{
 set laststatus=2
