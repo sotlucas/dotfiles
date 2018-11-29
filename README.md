@@ -1,4 +1,10 @@
-<h2 align="center"> sotlucas' dotfiles </h2>
+<div align="center">
+    <a href="https://github.com/sotlucas/dotfiles">
+        <img alt="sotlucas' dotfiles" src="icon.png" />
+    </a>
+    <br />
+    <h2> sotlucas' dotfiles </h2>
+</div>
 
 <div align="center">
 
