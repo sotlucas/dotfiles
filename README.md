@@ -3,7 +3,7 @@
         <img alt="sotlucas' dotfiles" src="icon.png" width="128px" />
     </a>
     <br />
-    <h2> sotlucas' dotfiles </h2>
+    <h1> sotlucas' dotfiles </h1>
 </div>
 
 <div align="center">
