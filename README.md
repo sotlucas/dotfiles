@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/sotlucas/dotfiles">
-        <img alt="sotlucas' dotfiles" src="icon.png" />
+        <img alt="sotlucas' dotfiles" src="icon.png" width="128px" />
     </a>
     <br />
     <h2> sotlucas' dotfiles </h2>
