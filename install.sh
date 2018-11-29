@@ -2,12 +2,11 @@
 
 SOURCE="https://github.com/sotlucas/dotfiles"
 TARGET="$HOME/.dotfiles"
-CMD="git clone $SOURCE $TARGET"
+UPDATE="git pull origin master"
 
 echo "Instalando dotfiles..."
-mkdir -p "$TARGET"
-# Clono repositorio
-eval "$CMD"
+# Actualizo repositorio
+eval "$UPDATE"
 # Creo symlinks
 ln -sf ~/.dotfiles/.gitconfig ~/
 ln -sf ~/.dotfiles/.vimrc ~/
