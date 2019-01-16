@@ -120,3 +120,10 @@ map! <C-v>ce ¢
 map! <C-v>*  •
 map! <C-v>co ⌘
 " }}}
+" Java {{{
+" Runs javac on the current file
+map <leader>jc :!javac %<CR> 
+" Runs the current java file
+map <leader>jj :!java %:r<CR>
+" }}}
+" # vim:ts=4:sw=4:ai:foldmethod=marker:foldlevel=0:
