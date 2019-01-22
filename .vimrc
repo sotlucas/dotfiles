@@ -45,9 +45,8 @@ endfunction
 nnoremap <silent><C-L> :call g:ToggleNuMode()<cr>
 " }}}
 " NERDTree {{{
-" use Ctrl+N to toggle NerdTree
-map <C-n> :NERDTreeToggle<CR>
-nnoremap <silent><C-L> :call g:ToggleNuMode()<cr>
+" use Ctrl+M to toggle NerdTree
+map <F6> :NERDTreeToggle<CR>
 " git indicators
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -61,6 +60,13 @@ let g:NERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
+" }}}
+" Snippets {{{
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
 " }}}
 " Status Bar {{{
 set laststatus=2
