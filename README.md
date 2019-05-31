@@ -14,6 +14,8 @@ _Here I'll keep and update all my dotfiles :D_
 
 ## Installation
 
+> **WARNING**: This will remove your current dotfiles. Make sure to backup your files before installing!!
+
 To install just clone the repo and run the `install.sh` script with the following commands
 ```
 git clone https://github.com/sotlucas/dotfiles ~/.dotfiles
@@ -47,7 +49,3 @@ Here is a list of the plugins I have installed for Vim.
 * [command-t](https://github.com/wincent/command-t)
 * [ultisnips](https://github.com/sirver/ultisnips)
 * [sorround.vim](https://github.com/tpope/vim-surround)
-
-<aside class="notice">
-This will remove your current dotfiles. Make sure to backup your files before installing!!
-</aside>
