@@ -47,3 +47,7 @@ Here is a list of the plugins I have installed for Vim.
 * [command-t](https://github.com/wincent/command-t)
 * [ultisnips](https://github.com/sirver/ultisnips)
 * [sorround.vim](https://github.com/tpope/vim-surround)
+
+<aside class="notice">
+This will remove your current dotfiles. Make sure to backup your files before installing!!
+</aside>
