@@ -38,7 +38,18 @@ Then just run
 ```
 This will also install missing plugins.
 
-## Vim Plugins
+---
+
+### Vim
+
+Manual symlink (remember to backup your last vimrc)
+```
+ln -sf $HOME/.dotfiles/.vimrc $HOME
+```
+This vimrc uses vim-plug to manage plugins so, to install the plugins run `:PlugInstall` inside vim. If you don't have vim-plug installed the same command will automatically install it.
+
+
+## Vim Plugins (needs an update)
 
 Here is a list of the plugins I have installed for Vim.
 
