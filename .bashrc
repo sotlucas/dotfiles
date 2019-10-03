@@ -173,3 +173,8 @@ export PS1="\[\e[94m\]\u@\h\[\e[m\]:\[\e[93m\]\w\[\e[m\] \[\e[32m\]\`parse_git_b
 # Git branch display
 #export PS1="\[\e[33m\]\u\[\e[m\]@\h:\w$(__git_ps1) "
 #export PS1='\[\033[82m\]\u\[\033[0m\]@\h:\w\[\033[32m\]$(__git_ps1)\$\[\033[0m\] '
+
+# JavaFX
+export JAVAFX_HOME=/usr/lib/jvm/javafx-sdk2.2.0-beta/rt/lib/jfxrt.jar
+export CLASSPATH=$CLASSPATH:$JAVAFX_HOME:.
+source /etc/environment
