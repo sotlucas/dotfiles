@@ -1,3 +1,6 @@
+[user]
+    name = Lucas Sotelo
+    email = lsotelo@fi.uba.ar
 [alias]
     lg = !"git lg1"
     lg1 = !"git lg1-specific --all"
