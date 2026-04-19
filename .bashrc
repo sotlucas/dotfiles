@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -halF --group-directories-first'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -169,12 +169,18 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[94m\]\u@\h\[\e[m\]:\[\e[93m\]\w\[\e[m\] \[\e[32m\]\`parse_git_branch\`\[\e[m\]$ "
-# Git branch display
-#export PS1="\[\e[33m\]\u\[\e[m\]@\h:\w$(__git_ps1) "
-#export PS1='\[\033[82m\]\u\[\033[0m\]@\h:\w\[\033[32m\]$(__git_ps1)\$\[\033[0m\] '
+# Bash prompt with current directory and git branch
+export PS1="\[\e[93m\]\w\[\e[m\] \[\e[32m\]\$(parse_git_branch)\[\e[m\]\$ "
 
 # JavaFX
 export JAVAFX_HOME=/usr/lib/jvm/javafx-sdk2.2.0-beta/rt/lib/jfxrt.jar
 export CLASSPATH=$CLASSPATH:$JAVAFX_HOME:.
 source /etc/environment
+
+# Apply Tinty colorscheme (excepto en VSCode)
+if [ "$TERM_PROGRAM" != "vscode" ] && [ -z "$VSCODE_PID" ]; then
+  eval "$(tinty init)"
+fi
+
+# fzf keybindings
+[ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
